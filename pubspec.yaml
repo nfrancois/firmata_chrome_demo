@@ -1,0 +1,10 @@
+name: firmata_chrome_demo
+description: A sample Chrome packaged application
+dependencies:
+  chrome: any
+  firmata:
+    path: ../firmata
+transformers:
+- chrome
+- $dart2js:
+    csp: true
