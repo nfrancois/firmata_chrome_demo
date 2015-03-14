@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-
-<html>
-  <head>
+<html lang="en">
+  <link href="/packages/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <meta charset="utf-8">
-    <title>Led</title>
+    <title>Leds demos</title>
     <link rel="stylesheet" href="led.css">
   </head>
   <body>
-    <button id="led1">OFF</button>
-    
+    <div class="container">
+      <h1>Arduino Manager</h1>
+      <div class="row">
+        <h2>Leds</h2>
+        <div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default" id="led1">Led 1</button>
+          </div>
+          <div class="btn-group">  
+            <button type="button" class="btn btn-default" id="led2">Led 2</button>
+          </div>
+        </div>
+        <div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default" id="led4">Led 4</button>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default" id="led3">Led 3</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="packages/chrome/bootstrap.js" defer></script>
-
-    <script src="led.dart" type="application/dart"></script>    
+    <script src="led.dart" type="application/dart"></script> 
   </body>
 </html>

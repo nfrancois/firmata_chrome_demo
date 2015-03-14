@@ -2,8 +2,8 @@ name: firmata_chrome_demo
 description: A sample Chrome packaged application
 dependencies:
   chrome: any
-  firmata:
-    path: ../firmata
+  bootstrap: ">=3.3.0+4 <4.0.0"
+  firmata: ">=0.3.0 <0.4.0"
 transformers:
 - chrome
 - $dart2js:
