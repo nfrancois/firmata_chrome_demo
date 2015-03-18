@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <title>Leds demos</title>
     <link rel="stylesheet" href="led.css">
+    <style>
+      .form-control {
+          width: 60px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -25,6 +30,17 @@
           <div class="btn-group">
             <button type="button" class="btn btn-default" id="led3">Led 3</button>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <h2>Press buttons</h2>
+        <div class="form-group">
+          <label for="p1">Button 1</label>
+          <input type="text" class="form-control" id="p1" disabled="true" size="3" value="OFF">
+        </div>
+        <div class="form-group">
+          <label for="p2">Button 2</label>
+          <input type="text" class="form-control" id="p2" disabled="true" size="3" value="OFF">
         </div>
       </div>
     </div>
