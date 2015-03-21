@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link href="/packages/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/packages/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>Arduino Manager</title>
     <link rel="stylesheet" href="ArduinoManager.css">
@@ -39,6 +39,20 @@
         </div>
       </div>
     </div>
+    <div class="loading" id="modal-loading" >
+      <div class="loading-dialog">
+        <div class="loading-header">
+          <h2>Connection</h2>
+        </div>
+        <div class="loading-body">
+          <p>Trying to connect to Arduino device</p>
+          <p id="msg-connexion-fail" class="text-danger">
+          </p>
+        </div>
+
+      </div>
+    </div>
+
     <script src="packages/chrome/bootstrap.js" defer></script>
     <script src="ArduinoManager.dart" type="application/dart"></script> 
   </body>

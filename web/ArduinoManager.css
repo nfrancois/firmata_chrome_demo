@@ -24,7 +24,54 @@ h1, p {
   margin-top: 140px;
 }
 
-
 .form-control {
     width: 60px;
+}
+
+.loading:before {
+  content: "";
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.loading:before {
+  display: block;
+}
+.loading .loading-dialog {
+  transform: translate(0, 0);
+  top: 20%;
+}
+.loading-dialog {
+  background: #fefefe;
+  border: #333333 solid 1px;
+  border-radius: 5px;
+  margin-left: -200px;
+  position: fixed;
+  left: 50%;
+  top: -100%;
+  z-index: 11;
+  width: 360px;
+  transform: translate(0, -500%);
+  transition: transform 0.3s ease-out;
+}
+.loading-body {
+  padding: 20px;
+}
+.loading-header {
+  padding: 10px 20px;
+}
+.loading-header {
+  border-bottom: #eeeeee solid 1px;
+}
+.loading-header h2 {
+  font-size: 20px;
+}
+
+.loading-close {
+  display: none; 
 }

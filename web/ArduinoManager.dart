@@ -40,6 +40,8 @@ final Map<int, ButtonElement> ledsButtons = {};
 main(){
  
   detect().then((board){
+    // Hide modal loading
+    querySelector("#modal-loading").classes.add("loading-close");
     // Init leds
     pinsIds.forEach((pin, id){
       // Arduino init
@@ -57,6 +59,8 @@ main(){
       buttonsInputs[pin] = button;
     });
     board.onDigitalRead.listen(toggleButtonInput);
+  }).catchError((e) {
+    querySelector("#msg-connexion-fail").innerHtml = e.toString();
   });
 }
 
